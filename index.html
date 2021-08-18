@@ -19,7 +19,7 @@
       <div class="nav_menu" id="nav-menu">
           <ul class="nav_list grid">
               <li class="nav_item">
-                  <a href="#home" class="nav_link">
+                  <a href="#home" class="nav_link active-link">
                     <i class='bx bx-home-alt nav_icon'  ></i> Home
                   </a>
               </li>
@@ -53,6 +53,9 @@
       </div>
 
       <div class="nav_btns">
+         <!-- These change button    -->
+        <i class='bx bx-moon change-theme' id="theme-button"></i>
+
           <div class="nav_toggle" id="nav-toggle">
             <i class='bx bx-menu-alt-left '></i>
           </div>
@@ -511,8 +514,7 @@
               <!-- services 2 -->
               <div class="services_content">
                 <div>
-                    <!-- code -->
-                    <i class='bx bx-columns services_icon' ></i>
+                    <i class='bx bx-code services_icon'></i>
                     <h3 class="services_title">Frontend <br> Developer</h3>
                 </div>
 
@@ -552,8 +554,7 @@
             <!-- services 3 -->
             <div class="services_content">
                 <div>
-                    <!-- pen -->
-                    <i class='bx bx-columns services_icon' ></i>
+                    <i class='bx bx-pencil services_icon' ></i>
                     <h3 class="services_title">Branding <br> Designer</h3>
                 </div>
 
@@ -597,11 +598,11 @@
           <h2 class="section_title">Portfolio</h2>
           <span class="section_subtitle">Most recent work</span>
 
-          <div class="portfolio_container container swiper-container">
+          <div class="portfolio_container container slideshow-container">
               <div class="swiper-wrapper">
                   <!-- portfolio 1-->
-                  <div class="portfolio_content grid swiper-slide">
-                      <img src="images/p.jpeg" alt="" class="portfolio_img">
+                  <div class="portfolio_content grid mySlides fade">
+                      <img src="images/websites.svg" alt="" class="portfolio_img">
 
                       <div class="portfolio_data">
                           <h3 class="portfolio_title">Morden Wedsite</h3>
@@ -614,8 +615,8 @@
                   </div>
 
                    <!-- portfolio 2-->
-                   <div class="portfolio_content grid swiper-slide">
-                    <img src="images/suga3.jpg" alt="" class="portfolio_img">
+                   <div class="portfolio_content grid mySlides fade">
+                    <img src="images/brand.svg" alt="" class="portfolio_img">
 
                     <div class="portfolio_data">
                         <h3 class="portfolio_title">Brand Design</h3>
@@ -628,8 +629,8 @@
                 </div>
 
                  <!-- portfolio 3-->
-                 <div class="portfolio_content grid swiper-slide">
-                    <img src="images/btsall.jpg" alt="" class="portfolio_img">
+                 <div class="portfolio_content grid mySlides fade">
+                    <img src="images/online-store.svg" alt="" class="portfolio_img">
 
                     <div class="portfolio_data">
                         <h3 class="portfolio_title">Online Store</h3>
@@ -643,13 +644,222 @@
               </div>
               
               <!-- add arows -->
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
-              <!-- Add Pagination -->
-             <div class="swiper-pagination"></div>
+             <div style="text-align:center">
+              <span class="dot" onclick="currentSlides(1)"></span> 
+              <span class="dot" onclick="currentSlides(2)"></span> 
+              <span class="dot" onclick="currentSlides(3)"></span> 
+             </div>
+              
+          </div>
+      </section>
+
+      <!-- Testimonal -->
+      <section class="testimonial section">
+         <h2 class="section_title">Testimonial</h2>
+         <span class="section_subtitle">My client saying</span>
+
+         <div class="testimonial_container container slideshows-container">
+             <div>
+                 <!-- testimonial 1 -->
+                 <div class="testimonial_content mySlide fades">
+                     <div class="testimonial_data">
+                        <div class="testimonial_header">
+                            <img src="images/p.jpeg" alt="" class="testimonial_img">
+
+                            <div>
+                                <h3 class="testimonial_name">Sara Smith</h3>
+                                <span class="testimonial_client">Client </span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <!-- star -->
+                            <i class='bx bxs-star testimonial_icon-star' ></i>
+                            <i class='bx bxs-star testimonial_icon-star' ></i>
+                            <i class='bx bxs-star testimonial_icon-star' ></i>
+                            <i class='bx bxs-star testimonial_icon-star' ></i>
+                            <i class='bx bxs-star testimonial_icon-star' ></i>
+                        </div>
+                     </div>
+
+                     <p class="testimonial_description">I get a good impression, i carry out my project with all the possible quality and attention and support 24 hours a day
+                     </p>
+                 </div>
+
+                 <!-- testimonial 2 -->
+                 <div class="testimonial_content mySlide fades">
+                    <div class="testimonial_data">
+                       <div class="testimonial_header">
+                           <img src="images/jk.jpg" alt="" class="testimonial_img">
+
+                           <div>
+                               <h3 class="testimonial_name">Matt Robinson</h3>
+                               <span class="testimonial_client">Client </span>
+                           </div>
+                       </div>
+
+                       <div>
+                           <!-- star -->
+                           <i class='bx bxs-star testimonial_icon-star' ></i>
+                           <i class='bx bxs-star testimonial_icon-star' ></i>
+                           <i class='bx bxs-star testimonial_icon-star' ></i>
+                           <i class='bx bxs-star testimonial_icon-star' ></i>
+                           <i class='bx bxs-star testimonial_icon-star' ></i>
+                       </div>
+                    </div>
+
+                    <p class="testimonial_description">I get a good impression, i carry out my project with all the possible quality and attention and support 24 hours a day
+                    </p>
+                </div>
+
+                <!-- testimonial 3-->
+                <div class="testimonial_content mySlide fades">
+                    <div class="testimonial_data">
+                       <div class="testimonial_header">
+                           <img src="images/textimonial.jpg" alt="" class="testimonial_img">
+
+                           <div>
+                               <h3 class="testimonial_name">Paul Harries</h3>
+                               <span class="testimonial_client">Client </span>
+                           </div>
+                       </div>
+
+                       <div>
+                        <i class='bx bxs-star testimonial_icon-star'></i>
+                        <i class='bx bxs-star testimonial_icon-star' ></i>
+                        <i class='bx bxs-star testimonial_icon-star' ></i>
+                        <i class='bx bxs-star testimonial_icon-star' ></i>
+                        <i class='bx bxs-star testimonial_icon-star' ></i>
+                        
+                       </div>
+                    </div>
+
+                    <p class="testimonial_description">I get a good impression, i carry out my project with all the possible quality and attention and support 24 hours a day
+                    </p>
+                </div>
+             </div>
+
+             <br>
+           <div style="text-align:center">
+            <span class="dots" onclick="currentSlide(1)"></span> 
+            <span class="dots" onclick="currentSlide(2)"></span> 
+            <span class="dots" onclick="currentSlide(3)"></span> 
+           </div>
+
+         </div>
+      </section>
+
+      <!-- contact me -->
+      <section class="contact section" id="contact">
+          <h2 class="section_title">Contact Me</h2>
+          <span class="section_subtitle">Get in touch</span>
+
+          <div class="contact_container container grid">
+              <div>
+                  <div class="contact_information">
+                    <i class='bx bx-phone contact_icon'></i>
+
+                    <div>
+                       <h3 class="contact_title">Call Me</h3> 
+                       <span class="contact_subtitle">999-777-666</span>
+                    </div>
+                  </div>
+
+                <div class="contact_information">
+                <i class='bx bx-envelope contact_icon'></i>
+                
+                    <div>
+                        <h3 class="contact_title">Email</h3>
+                        <span class="contact_subtitle">Praisejah.c.uzoma@gmail.com</span>
+                    </div>
+                </div>
+
+                <div class="contact_information">
+                    <i class='bx bxs-edit-location contact_icon'></i>
+                
+                    <div>
+                        <h3 class="contact_title">Lcation</h3>
+                        <span class="contact_subtitle">Peru - Lima Av. Boliver #123</span>
+                    </div>
+                </div>
+              </div>
+
+              <form action="" class="contact_form grid">
+                  <div class="contact_inputs grid">
+                      <div class="contact_content">
+                          <label for="" class="contact_label">Name</label>
+                          <input type="text" class="contact_input">
+                      </div>
+
+                    <div class="contact_content">
+                        <label for="" class="contact_label">Email</label>
+                        <input type="email" class="contact_input">
+                    </div>
+                  </div>
+                <div class="contact_content">
+                    <label for="" class="contact_label">Project</label>
+                    <input type="text" class="contact_input">
+                </div>
+                <div class="contact_content">
+                    <label for="" class="contact_label">Message</label>
+                    <textarea name="" id="" cols="0" rows="7" class="contact_input"></textarea>
+                </div>
+
+                <div>
+                    <a href="" class="button button--flex">
+                        Send Message
+                        <i class='bx bxs-paper-plane button_icon'></i>
+                    </a>
+                </div>
+              </form>
           </div>
       </section>
     </main>
+   
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer_bg">
+          <div class="footer_container container grid">
+              <div>
+                  <h1 class="footer_title">Praisejah</h1>
+                  <span class="footer_subtitle">Frontend developer </span>                  
+              </div>
+
+              <ul class="footer_links">
+                  <li>
+                      <a href="#services" class="footer_link">Services</a>
+                  </li>
+                <li>
+                    <a href="#portfolio" class="footer_link">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#contact" class="footer_link">Contactme</a>
+                </li>
+              </ul>
+
+              <div class="footer_socials">
+                  <a href="https://www.facebook.com/" target="-blank" class="footer_social">
+                    <i class='bx bxl-facebook'></i>
+                  </a>
+
+                  <a href="https://www.instagram.com/" target="-blank" class="footer_social">
+                    <i class='bx bxl-instagram'></i>
+                  </a>
+
+                  <a href="https://twitter.com/" target="-blank" class="footer_social">
+                    <i class='bx bxl-twitter'></i>
+                  </a>
+              </div>
+          </div>
+
+          <p class="footer_copy">&#169; Praisejah. All right reserved</p>
+      </div>
+    </footer>
+
+    <!-- scroll up -->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class='bx bx-up-arrow-alt scrollup-icon'></i>
+    </a>
 
     <script src="js/script.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
